@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Weather & Map App</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="app-container">
+    <h2>Weather Map Finder</h2>
+    
+    <div class="search-box">
+        <input type="text" id="locInput" placeholder="City, District, or State...">
+        <button onclick="getWeatherData()">Search</button>
+    </div>
+
+    <div id="weatherDisplay" class="weather-info">
+        <div id="resLoc" class="location">Location Name</div>
+        <div id="resRegion" style="opacity: 0.7;">Region, Country</div>
+        <img id="resIcon" src="" alt="Weather Icon">
+        <div id="resTemp" class="temp">0°C</div>
+        <p id="resCondition">Clear Skies</p>
+    </div>
+
+    <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
